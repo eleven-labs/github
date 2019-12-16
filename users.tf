@@ -440,14 +440,6 @@ module "WILSON" {
 
 # TODO: users to remove from organisation
 
-# ANONYMOUS
-module "ANONYMOUS" {
-  source = "./module/user/"
-
-  user-name = "nmss"
-  user-role = "member"
-}
-
 # AGIRI Kevin
 module "AGIRIKevin" {
   source = "./module/user/"

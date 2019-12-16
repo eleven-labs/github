@@ -52,10 +52,6 @@ module "developers" {
       role  = "member"
     },
     {
-      login = module.ANONYMOUS.login
-      role  = "member"
-    },
-    {
       login = module.BERNARDJeremy.login
       role  = "member"
     },
