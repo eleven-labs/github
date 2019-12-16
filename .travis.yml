@@ -1,0 +1,29 @@
+language: generic
+
+env:
+  global:
+    - TERRAFORM_VERSION=0.12.18
+    - TERRAFORM_PATH=$HOME/bin
+
+before_install:
+  - wget "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" -O /tmp/terraform.zip
+
+install:
+  - unzip -d "${TERRAFORM_PATH}" /tmp/terraform.zip
+
+before_script:
+  - terraform init -input=false
+  - terraform workspace select prd
+
+script:
+  - terraform validate
+  - terraform fmt -check=true -diff
+  - terraform plan -input=false -out=.terraform/tfplan
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script:
+    - terraform apply -input=false .terraform/tfplan
+  on:
+    branch: master
