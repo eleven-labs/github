@@ -211,7 +211,7 @@ module "GREAUXJeremy" {
   source = "./module/user/"
 
   user-name = "JeremyGreaux"
-  user-role = "member"
+  user-role = "admin"
 }
 
 # GREVIN Nicolas
