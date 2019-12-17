@@ -455,11 +455,3 @@ module "JALOUZOTJonathan" {
   user-name = "CaptainJojo"
   user-role = "admin"
 }
-
-# MONCADE Cedric
-module "MONCADECedric" {
-  source = "./module/user/"
-
-  user-name = "crashbtz"
-  user-role = "member"
-}
