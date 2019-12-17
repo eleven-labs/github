@@ -13,14 +13,13 @@ resource "github_branch_protection" "main" {
     contexts = var.branches_protection[count.index].status_check-contexts
   }
 
-  # TODO: find a way to disable this block
-  #required_pull_request_reviews {
-  #  required_approving_review_count = var.branches_protection[count.index].pr_reviews-required_approving_review_count
-  #  dismiss_stale_reviews           = var.branches_protection[count.index].pr_reviews-dismiss_stale_reviews
-  #  dismissal_users                 = var.branches_protection[count.index].pr_reviews-dismissal_users
-  #  dismissal_teams                 = var.branches_protection[count.index].pr_reviews-dismissal_teams
-  #  require_code_owner_reviews      = var.branches_protection[count.index].pr_reviews-require_code_owner_reviews
-  #}
+  required_pull_request_reviews {
+    required_approving_review_count = var.branches_protection[count.index].pr_reviews-required_approving_review_count
+    dismiss_stale_reviews           = var.branches_protection[count.index].pr_reviews-dismiss_stale_reviews
+    dismissal_users                 = var.branches_protection[count.index].pr_reviews-dismissal_users
+    dismissal_teams                 = var.branches_protection[count.index].pr_reviews-dismissal_teams
+    require_code_owner_reviews      = var.branches_protection[count.index].pr_reviews-require_code_owner_reviews
+  }
 
   restrictions {
     users = var.branches_protection[count.index].restrictions-users
