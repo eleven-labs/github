@@ -12,6 +12,10 @@ module "core" {
       role  = "maintainer"
     },
     {
+      login = module.GREAUXJeremy.login
+      role  = "maintainer"
+    },
+    {
       login = module.JALOUZOTJonathan.login
       role  = "maintainer"
     },
@@ -161,7 +165,7 @@ module "developers" {
     },
     {
       login = module.GREAUXJeremy.login
-      role  = "member"
+      role  = "maintainer"
     },
     {
       login = module.GREVINNicolas.login
