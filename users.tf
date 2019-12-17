@@ -251,7 +251,7 @@ module "KANIANoel" {
   source = "./module/user/"
 
   user-name = "snroki"
-  user-role = "member"
+  user-role = "admin"
 }
 
 # KPOTOGBEY-MAKU Shalom

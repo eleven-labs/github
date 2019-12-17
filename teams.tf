@@ -20,6 +20,10 @@ module "core" {
       role  = "maintainer"
     },
     {
+      login = module.KANIANoel.login
+      role  = "maintainer"
+    },
+    {
       login = module.SAILLARDDamien.login
       role  = "maintainer"
     },
@@ -181,7 +185,7 @@ module "developers" {
     },
     {
       login = module.KANIANoel.login
-      role  = "member"
+      role  = "maintainer"
     },
     {
       login = module.KPOTOGBEYMAKUShalom.login
