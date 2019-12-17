@@ -74,7 +74,6 @@ module "blog_eleven-labs_com" {
       pr_reviews-dismissal_users                 = []
       pr_reviews-dismissal_teams                 = []
       restrictions-users = [
-        module.JALOUZOTJonathan.login,
         module.PEJOUTThomas.login,
         module.VEBERArnaud.login,
       ]
@@ -121,7 +120,7 @@ module "codelabs" {
       pr_reviews-dismiss_stale_reviews           = false
       pr_reviews-dismissal_users                 = []
       pr_reviews-dismissal_teams                 = []
-      restrictions-users                         = [module.JALOUZOTJonathan.login]
+      restrictions-users                         = []
       restrictions-teams                         = []
     }
   ]

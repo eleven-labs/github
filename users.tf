@@ -445,13 +445,3 @@ module "WILSON" {
   user-name = "ElevenWilson"
   user-role = "member"
 }
-
-# TODO: users to remove from organisation
-
-# JALOUZOT Jonathan
-module "JALOUZOTJonathan" {
-  source = "./module/user/"
-
-  user-name = "CaptainJojo"
-  user-role = "admin"
-}
