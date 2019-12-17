@@ -479,11 +479,3 @@ module "MONCADECedric" {
   user-name = "crashbtz"
   user-role = "member"
 }
-
-# MORENO Jean Francois
-module "MORENOJeanFrancois" {
-  source = "./module/user/"
-
-  user-name = "jiefmoreno"
-  user-role = "member"
-}
