@@ -456,14 +456,6 @@ module "AGIRIKevin" {
   user-role = "member"
 }
 
-# CHMITI Safia
-module "CHMITISafia" {
-  source = "./module/user/"
-
-  user-name = "Safia11"
-  user-role = "member"
-}
-
 # DARA Mehdy
 module "DARAMehdy" {
   source = "./module/user/"
