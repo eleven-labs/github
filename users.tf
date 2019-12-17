@@ -456,14 +456,6 @@ module "DARAMehdy" {
   user-role = "member"
 }
 
-# DOUCET Marion
-module "DOUCETMarion" {
-  source = "./module/user/"
-
-  user-name = "mariondou"
-  user-role = "member"
-}
-
 # JALOUZOT Jonathan
 module "JALOUZOTJonathan" {
   source = "./module/user/"
