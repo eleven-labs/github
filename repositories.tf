@@ -42,3 +42,55 @@ module "github" {
 
   repository-issue_labels = concat(var.default-issue_labels)
 }
+
+module "blog_eleven-labs_com" {
+  source = "./module/repository/"
+
+  # repository
+  repository-name         = "blog.eleven-labs.com"
+  repository-description  = "Eleven-labs blog"
+  repository-homepage_url = "https://blog.eleven-labs.com"
+  repository-topics       = ["jekyll", "blog", "article", "le-blog"]
+
+  repository-private = false
+
+  repository-has_projects = false
+
+  repository-auto_init      = false
+  repository-default_branch = "master"
+
+  # branches protection
+  branches_protection = [
+    {
+      branch                                     = "master"
+      enforce_admins                             = false
+      require_signed_commits                     = false
+      status_check-strict                        = true
+      status_check-contexts                      = ["continuous-integration/travis-ci"]
+      pr_reviews-required_approving_review_count = 1
+      pr_reviews-require_code_owner_reviews      = false
+      pr_reviews-dismiss_stale_reviews           = false
+      pr_reviews-dismissal_users                 = []
+      pr_reviews-dismissal_teams                 = []
+      restrictions-users = [
+        module.JALOUZOTJonathan.login,
+        module.PEJOUTThomas.login,
+        module.VEBERArnaud.login,
+      ]
+      restrictions-teams = []
+    }
+  ]
+
+  # webhooks
+  webhooks = [
+    {
+      url          = "https://notify.travis-ci.org"
+      content_type = "form"
+      insecure_ssl = false
+      active       = true
+      events       = ["create", "delete", "issue_comment", "member", "public", "pull_request", "push", "repository"]
+    }
+  ]
+
+  repository-issue_labels = concat(var.default-issue_labels)
+}
