@@ -123,6 +123,7 @@ variable "webhooks" {
   type = list(
     object({
       url          = string,
+      secret       = string,
       content_type = string,
       insecure_ssl = bool,
       active       = bool,

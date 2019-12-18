@@ -33,6 +33,7 @@ module "github" {
   webhooks = [
     {
       url          = "https://notify.travis-ci.org"
+      secret       = null
       content_type = "form"
       insecure_ssl = false
       active       = true
@@ -85,6 +86,7 @@ module "blog_eleven-labs_com" {
   webhooks = [
     {
       url          = "https://notify.travis-ci.org"
+      secret       = null
       content_type = "form"
       insecure_ssl = false
       active       = true
