@@ -7,39 +7,26 @@ module "core" {
   team-privacy     = "secret"
 
   team-members = [
-    {
-      login = module.GORRONCharlesEric.login
-      role  = "maintainer"
-    },
-    {
-      login = module.GREAUXJeremy.login
-      role  = "maintainer"
-    },
-    {
-      login = module.JALOUZOTJonathan.login
-      role  = "maintainer"
-    },
-    {
-      login = module.JARDINETRemy.login
-      role  = "maintainer"
-    },
-    {
-      login = module.KANIANoel.login
-      role  = "maintainer"
-    },
-    {
-      login = module.SAILLARDDamien.login
-      role  = "maintainer"
-    },
-    {
-      login = module.SAILLARDDamien11.login
-      role  = "maintainer"
-    },
-    {
-      login = module.VEBERArnaud.login
-      role  = "maintainer"
-    }
+    module.GORRONCharlesEric.login,
+    module.GREAUXJeremy.login,
+    module.JALOUZOTJonathan.login,
+    module.JARDINETRemy.login,
+    module.KANIANoel.login,
+    module.SAILLARDDamien.login,
+    module.SAILLARDDamien11.login,
+    module.VEBERArnaud.login,
   ]
+
+  team-roles = {
+    (module.GORRONCharlesEric.login) = "maintainer",
+    (module.GREAUXJeremy.login)      = "maintainer",
+    (module.JALOUZOTJonathan.login)  = "maintainer",
+    (module.JARDINETRemy.login)      = "maintainer",
+    (module.KANIANoel.login)         = "maintainer",
+    (module.SAILLARDDamien.login)    = "maintainer",
+    (module.SAILLARDDamien11.login)  = "maintainer",
+    (module.VEBERArnaud.login)       = "maintainer",
+  }
 }
 
 # Developers
@@ -51,243 +38,128 @@ module "developers" {
   team-privacy     = "closed"
 
   team-members = [
-    {
-      login = module.AGIRIKevin.login
-      role  = "member"
-    },
-    {
-      login = module.ANDREAlexandre.login
-      role  = "member"
-    },
-    {
-      login = module.BERNARDJeremy.login
-      role  = "member"
-    },
-    {
-      login = module.BERTRANDVincent.login
-      role  = "member"
-    },
-    {
-      login = module.BILLARDMADRIERESVictor.login
-      role  = "member"
-    },
-    {
-      login = module.BOEHadrien.login
-      role  = "member"
-    },
-    {
-      login = module.BOILLONYannick.login
-      role  = "member"
-    },
-    {
-      login = module.BRENOTPierre.login
-      role  = "member"
-    },
-    {
-      login = module.BRUGIDOUThibaut.login
-      role  = "member"
-    },
-    {
-      login = module.CADOUXMartin.login
-      role  = "member"
-    },
-    {
-      login = module.CALONEBastien.login
-      role  = "member"
-    },
-    {
-      login = module.CANALGuillem.login
-      role  = "member"
-    },
-    {
-      login = module.CHARRONMaeva.login
-      role  = "member"
-    },
-    {
-      login = module.CHMITISafia.login
-      role  = "member"
-    },
-    {
-      login = module.CLAVIERAnais.login
-      role  = "member"
-    },
-    {
-      login = module.CORDIERKevin.login
-      role  = "member"
-    },
-    {
-      login = module.DARAMehdy.login
-      role  = "member"
-    },
-    {
-      login = module.DELPEYROUXVictor.login
-      role  = "member"
-    },
-    {
-      login = module.DIOURIYounes.login
-      role  = "member"
-    },
-    {
-      login = module.DOUCETMarion.login
-      role  = "member"
-    },
-    {
-      login = module.DRUONMehdi.login
-      role  = "member"
-    },
-    {
-      login = module.DURANDHugo.login
-      role  = "member"
-    },
-    {
-      login = module.DURANDRomain.login
-      role  = "member"
-    },
-    {
-      login = module.EINHORNStephane.login
-      role  = "member"
-    },
-    {
-      login = module.ELFARSAOUIKamal.login
-      role  = "member"
-    },
-    {
-      login = module.FRUITDimitri.login
-      role  = "member"
-    },
-    {
-      login = module.GORRONCharlesEric.login
-      role  = "maintainer"
-    },
-    {
-      login = module.GRAILLONRobin.login
-      role  = "member"
-    },
-    {
-      login = module.GREAUXJeremy.login
-      role  = "maintainer"
-    },
-    {
-      login = module.GREVINNicolas.login
-      role  = "member"
-    },
-    {
-      login = module.HUCHONThibaud.login
-      role  = "member"
-    },
-    {
-      login = module.JACQUEMINArthur.login
-      role  = "member"
-    },
-    {
-      login = module.JALOUZOTJonathan.login
-      role  = "maintainer"
-    },
-    {
-      login = module.JARDINETRemy.login
-      role  = "maintainer"
-    },
-    {
-      login = module.KANIANoel.login
-      role  = "maintainer"
-    },
-    {
-      login = module.KPOTOGBEYMAKUShalom.login
-      role  = "member"
-    },
-    {
-      login = module.LANAUGregory.login
-      role  = "member"
-    },
-    {
-      login = module.LENGLETMartin.login
-      role  = "member"
-    },
-    {
-      login = module.LEROUGEPierre.login
-      role  = "member"
-    },
-    {
-      login = module.MAIREAUXMaxence.login
-      role  = "member"
-    },
-    {
-      login = module.MASCLEFRomain.login
-      role  = "member"
-    },
-    {
-      login = module.MAVILLAZRemi.login
-      role  = "member"
-    },
-    {
-      login = module.MIGEOTDEBARANFabrice.login
-      role  = "member"
-    },
-    {
-      login = module.MINASYANMarie.login
-      role  = "member"
-    },
-    {
-      login = module.MOATIJacques.login
-      role  = "member"
-    },
-    {
-      login = module.MONCADECedric.login
-      role  = "member"
-    },
-    {
-      login = module.MORENOJeanFrancois.login
-      role  = "member"
-    },
-    {
-      login = module.MOUTTEAnthony.login
-      role  = "member"
-    },
-    {
-      login = module.OGRENCarl.login
-      role  = "member"
-    },
-    {
-      login = module.PASQUETFabien.login
-      role  = "member"
-    },
-    {
-      login = module.PEAUDECERFMarion.login
-      role  = "member"
-    },
-    {
-      login = module.PIERLOTRomain.login
-      role  = "member"
-    },
-    {
-      login = module.SAILLARDDamien.login
-      role  = "maintainer"
-    },
-    {
-      login = module.SAILLARDDamien11.login
-      role  = "maintainer"
-    },
-    {
-      login = module.SOLOMONEmmanuel.login
-      role  = "member"
-    },
-    {
-      login = module.SURPierre.login
-      role  = "member"
-    },
-    {
-      login = module.THUONThierry.login
-      role  = "member"
-    },
-    {
-      login = module.VEBERArnaud.login
-      role  = "maintainer"
-    },
-    {
-      login = module.VERMEILPierre.login
-      role  = "member"
-    },
+    module.AGIRIKevin.login,
+    module.ANDREAlexandre.login,
+    module.BERNARDJeremy.login,
+    module.BERTRANDVincent.login,
+    module.BILLARDMADRIERESVictor.login,
+    module.BOEHadrien.login,
+    module.BOILLONYannick.login,
+    module.BRENOTPierre.login,
+    module.BRUGIDOUThibaut.login,
+    module.CADOUXMartin.login,
+    module.CALONEBastien.login,
+    module.CANALGuillem.login,
+    module.CHARRONMaeva.login,
+    module.CHMITISafia.login,
+    module.CLAVIERAnais.login,
+    module.CORDIERKevin.login,
+    module.DARAMehdy.login,
+    module.DELPEYROUXVictor.login,
+    module.DIOURIYounes.login,
+    module.DOUCETMarion.login,
+    module.DRUONMehdi.login,
+    module.DURANDHugo.login,
+    module.DURANDRomain.login,
+    module.EINHORNStephane.login,
+    module.ELFARSAOUIKamal.login,
+    module.FRUITDimitri.login,
+    module.GORRONCharlesEric.login,
+    module.GRAILLONRobin.login,
+    module.GREAUXJeremy.login,
+    module.GREVINNicolas.login,
+    module.HUCHONThibaud.login,
+    module.JACQUEMINArthur.login,
+    module.JALOUZOTJonathan.login,
+    module.JARDINETRemy.login,
+    module.KANIANoel.login,
+    module.KPOTOGBEYMAKUShalom.login,
+    module.LANAUGregory.login,
+    module.LENGLETMartin.login,
+    module.LEROUGEPierre.login,
+    module.MAIREAUXMaxence.login,
+    module.MASCLEFRomain.login,
+    module.MAVILLAZRemi.login,
+    module.MIGEOTDEBARANFabrice.login,
+    module.MINASYANMarie.login,
+    module.MOATIJacques.login,
+    module.MONCADECedric.login,
+    module.MORENOJeanFrancois.login,
+    module.MOUTTEAnthony.login,
+    module.OGRENCarl.login,
+    module.PASQUETFabien.login,
+    module.PEAUDECERFMarion.login,
+    module.PIERLOTRomain.login,
+    module.SAILLARDDamien.login,
+    module.SAILLARDDamien11.login,
+    module.SOLOMONEmmanuel.login,
+    module.SURPierre.login,
+    module.THUONThierry.login,
+    module.VEBERArnaud.login,
+    module.VERMEILPierre.login,
   ]
+
+  team-roles = {
+    (module.AGIRIKevin.login)             = "member",
+    (module.ANDREAlexandre.login)         = "member",
+    (module.BERNARDJeremy.login)          = "member",
+    (module.BERTRANDVincent.login)        = "member",
+    (module.BILLARDMADRIERESVictor.login) = "member",
+    (module.BOEHadrien.login)             = "member",
+    (module.BOILLONYannick.login)         = "member",
+    (module.BRENOTPierre.login)           = "member",
+    (module.BRUGIDOUThibaut.login)        = "member",
+    (module.CADOUXMartin.login)           = "member",
+    (module.CALONEBastien.login)          = "member",
+    (module.CANALGuillem.login)           = "member",
+    (module.CHARRONMaeva.login)           = "member",
+    (module.CHMITISafia.login)            = "member",
+    (module.CLAVIERAnais.login)           = "member",
+    (module.CORDIERKevin.login)           = "member",
+    (module.DARAMehdy.login)              = "member",
+    (module.DELPEYROUXVictor.login)       = "member",
+    (module.DIOURIYounes.login)           = "member",
+    (module.DOUCETMarion.login)           = "member",
+    (module.DRUONMehdi.login)             = "member",
+    (module.DURANDHugo.login)             = "member",
+    (module.DURANDRomain.login)           = "member",
+    (module.EINHORNStephane.login)        = "member",
+    (module.ELFARSAOUIKamal.login)        = "member",
+    (module.FRUITDimitri.login)           = "member",
+    (module.GORRONCharlesEric.login)      = "maintainer",
+    (module.GRAILLONRobin.login)          = "member",
+    (module.GREAUXJeremy.login)           = "maintainer",
+    (module.GREVINNicolas.login)          = "member",
+    (module.HUCHONThibaud.login)          = "member",
+    (module.JACQUEMINArthur.login)        = "member",
+    (module.JALOUZOTJonathan.login)       = "maintainer",
+    (module.JARDINETRemy.login)           = "maintainer",
+    (module.KANIANoel.login)              = "maintainer",
+    (module.KPOTOGBEYMAKUShalom.login)    = "member",
+    (module.LANAUGregory.login)           = "member",
+    (module.LENGLETMartin.login)          = "member",
+    (module.LEROUGEPierre.login)          = "member",
+    (module.MAIREAUXMaxence.login)        = "member",
+    (module.MASCLEFRomain.login)          = "member",
+    (module.MAVILLAZRemi.login)           = "member",
+    (module.MIGEOTDEBARANFabrice.login)   = "member",
+    (module.MINASYANMarie.login)          = "member",
+    (module.MOATIJacques.login)           = "member",
+    (module.MONCADECedric.login)          = "member",
+    (module.MORENOJeanFrancois.login)     = "member",
+    (module.MOUTTEAnthony.login)          = "member",
+    (module.OGRENCarl.login)              = "member",
+    (module.PASQUETFabien.login)          = "member",
+    (module.PEAUDECERFMarion.login)       = "member",
+    (module.PIERLOTRomain.login)          = "member",
+    (module.SAILLARDDamien.login)         = "maintainer",
+    (module.SAILLARDDamien11.login)       = "maintainer",
+    (module.SOLOMONEmmanuel.login)        = "member",
+    (module.SURPierre.login)              = "member",
+    (module.THUONThierry.login)           = "member",
+    (module.VEBERArnaud.login)            = "maintainer",
+    (module.VERMEILPierre.login)          = "member",
+  }
 }
 
 # HQ
@@ -299,29 +171,20 @@ module "hq" {
   team-privacy     = "closed"
 
   team-members = [
-    {
-      login = module.AMARBenjamin.login
-      role  = "member"
-    },
-    {
-      login = module.BERRYElsa.login
-      role  = "member"
-    },
-    {
-      login = module.CLAVIERAnais.login
-      role  = "member"
-    },
-    {
-      login = module.JALOUZOTJonathan.login
-      role  = "maintainer"
-    },
-    {
-      login = module.PEJOUTThomas.login
-      role  = "maintainer"
-    },
-    {
-      login = module.WILSON.login
-      role  = "member"
-    }
+    module.AMARBenjamin.login,
+    module.BERRYElsa.login,
+    module.CLAVIERAnais.login,
+    module.JALOUZOTJonathan.login,
+    module.PEJOUTThomas.login,
+    module.WILSON.login,
   ]
+
+  team-roles = {
+    (module.AMARBenjamin.login)     = "member",
+    (module.BERRYElsa.login)        = "member",
+    (module.CLAVIERAnais.login)     = "member",
+    (module.JALOUZOTJonathan.login) = "maintainer",
+    (module.PEJOUTThomas.login)     = "maintainer",
+    (module.WILSON.login)           = "member",
+  }
 }
