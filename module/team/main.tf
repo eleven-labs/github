@@ -7,10 +7,9 @@ resource "github_team" "main" {
 }
 
 resource "github_team_membership" "members" {
-  count = length(var.team-members)
+  for_each = toset(var.team-members)
 
   team_id  = github_team.main.id
-  username = var.team-members[count.index].login
-  role     = var.team-members[count.index].role
+  username = each.value
+  role     = var.team-roles[each.value]
 }
-
