@@ -27,12 +27,14 @@ variable "team-ldap_dn" {
 }
 
 variable "team-members" {
-  type = list(
-    object({
-      login = string,
-      role  = string
-    })
-  )
+  type = list(string)
 
   default = []
+}
+
+
+variable "team-roles" {
+  type = map
+
+  default = {}
 }
