@@ -148,3 +148,23 @@ module "codelabs" {
 
   repository-issue_labels = concat(var.default-issue_labels)
 }
+
+module "wheel-of-fortune" {
+  source = "./module/repository/"
+
+  # repository
+  repository-name = "wheel-of-fortune"
+
+  repository-private = false
+
+  repository-auto_init      = false
+  repository-default_branch = "master"
+
+  # branches protection
+  branches_protection = []
+
+  # webhooks
+  webhooks = []
+
+  repository-issue_labels = concat(var.default-issue_labels)
+}
