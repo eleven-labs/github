@@ -1,5 +1,6 @@
 language: generic
 os: linux
+version: ~> 1.0
 
 env:
   global:
@@ -22,6 +23,7 @@ script:
   - terraform plan -input=false -out=.terraform/tfplan
 
 deploy:
+  cleanup: false
   provider: script
   script: terraform apply -input=false .terraform/tfplan
   on:
