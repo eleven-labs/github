@@ -254,14 +254,6 @@ module "KANIANoel" {
   user-role = "admin"
 }
 
-# KPOTOGBEY-MAKU Shalom
-module "KPOTOGBEYMAKUShalom" {
-  source = "./module/user/"
-
-  user-name = "shalomaku"
-  user-role = "member"
-}
-
 # LANAU Gregory
 module "LANAUGregory" {
   source = "./module/user/"
