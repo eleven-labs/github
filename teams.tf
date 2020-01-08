@@ -9,7 +9,6 @@ module "core" {
   team-members = [
     module.GORRONCharlesEric.login,
     module.GREAUXJeremy.login,
-    module.JALOUZOTJonathan.login,
     module.JARDINETRemy.login,
     module.KANIANoel.login,
     module.SAILLARDDamien.login,
@@ -20,7 +19,6 @@ module "core" {
   team-roles = {
     (module.GORRONCharlesEric.login) = "maintainer",
     (module.GREAUXJeremy.login)      = "maintainer",
-    (module.JALOUZOTJonathan.login)  = "maintainer",
     (module.JARDINETRemy.login)      = "maintainer",
     (module.KANIANoel.login)         = "maintainer",
     (module.SAILLARDDamien.login)    = "maintainer",
@@ -66,7 +64,6 @@ module "developers" {
     module.GREVINNicolas.login,
     module.HUCHONThibaud.login,
     module.JACQUEMINArthur.login,
-    module.JALOUZOTJonathan.login,
     module.JARDINETRemy.login,
     module.KANIANoel.login,
     module.KPOTOGBEYMAKUShalom.login,
@@ -122,7 +119,6 @@ module "developers" {
     (module.GREVINNicolas.login)          = "member",
     (module.HUCHONThibaud.login)          = "member",
     (module.JACQUEMINArthur.login)        = "member",
-    (module.JALOUZOTJonathan.login)       = "maintainer",
     (module.JARDINETRemy.login)           = "maintainer",
     (module.KANIANoel.login)              = "maintainer",
     (module.KPOTOGBEYMAKUShalom.login)    = "member",
@@ -162,17 +158,15 @@ module "hq" {
     module.AMARBenjamin.login,
     module.BERRYElsa.login,
     module.CLAVIERAnais.login,
-    module.JALOUZOTJonathan.login,
     module.PEJOUTThomas.login,
     module.WILSON.login,
   ]
 
   team-roles = {
-    (module.AMARBenjamin.login)     = "member",
-    (module.BERRYElsa.login)        = "member",
-    (module.CLAVIERAnais.login)     = "member",
-    (module.JALOUZOTJonathan.login) = "maintainer",
-    (module.PEJOUTThomas.login)     = "maintainer",
-    (module.WILSON.login)           = "member",
+    (module.AMARBenjamin.login) = "member",
+    (module.BERRYElsa.login)    = "member",
+    (module.CLAVIERAnais.login) = "member",
+    (module.PEJOUTThomas.login) = "maintainer",
+    (module.WILSON.login)       = "member",
   }
 }
