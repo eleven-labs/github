@@ -1,4 +1,5 @@
 language: generic
+os: linux
 
 env:
   global:
@@ -21,9 +22,7 @@ script:
   - terraform plan -input=false -out=.terraform/tfplan
 
 deploy:
-  skip_cleanup: true
   provider: script
-  script:
-    - terraform apply -input=false .terraform/tfplan
+  script: terraform apply -input=false .terraform/tfplan
   on:
     branch: master
