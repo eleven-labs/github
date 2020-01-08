@@ -23,8 +23,8 @@ script:
   - terraform plan -input=false -out=.terraform/tfplan
 
 deploy:
-  cleanup: false
   provider: script
+  edge: true
   script: terraform apply -input=false .terraform/tfplan
   on:
     branch: master
