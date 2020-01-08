@@ -448,14 +448,6 @@ module "WILSON" {
 
 # TODO: users to remove from organisation
 
-# DARA Mehdy
-module "DARAMehdy" {
-  source = "./module/user/"
-
-  user-name = "zckrs"
-  user-role = "member"
-}
-
 # JALOUZOT Jonathan
 module "JALOUZOTJonathan" {
   source = "./module/user/"
