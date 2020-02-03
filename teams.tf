@@ -38,6 +38,7 @@ module "developers" {
   team-members = [
     module.ALGRINThibaut.login,
     module.ANDREAlexandre.login,
+    module.BENAIMMichael.login,
     module.BERNARDJeremy.login,
     module.BERTRANDVincent.login,
     module.BILLARDMADRIERESVictor.login,
@@ -93,6 +94,7 @@ module "developers" {
   team-roles = {
     (module.ALGRINThibaut.login)          = "member",
     (module.ANDREAlexandre.login)         = "member",
+    (module.BENAIMMichael.login)          = "member",
     (module.BERNARDJeremy.login)          = "member",
     (module.BERTRANDVincent.login)        = "member",
     (module.BILLARDMADRIERESVictor.login) = "member",
