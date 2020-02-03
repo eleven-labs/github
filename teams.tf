@@ -36,6 +36,7 @@ module "developers" {
   team-privacy     = "closed"
 
   team-members = [
+    module.ALGRINThibaut.login,
     module.ANDREAlexandre.login,
     module.BERNARDJeremy.login,
     module.BERTRANDVincent.login,
@@ -90,6 +91,7 @@ module "developers" {
   ]
 
   team-roles = {
+    (module.ALGRINThibaut.login)          = "member",
     (module.ANDREAlexandre.login)         = "member",
     (module.BERNARDJeremy.login)          = "member",
     (module.BERTRANDVincent.login)        = "member",
