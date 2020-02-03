@@ -22,6 +22,14 @@ module "ANDREAlexandre" {
   user-role = "member"
 }
 
+# BENAIMMichael
+module "BENAIMMichael" {
+  source = "./module/user/"
+
+  user-name = "mikaben89"
+  user-role = "member"
+}
+
 # BERNARD Jeremy
 module "BERNARDJeremy" {
   source = "./module/user/"
