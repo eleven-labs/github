@@ -54,6 +54,14 @@ module "BERTRANDVincent" {
   user-role = "member"
 }
 
+# BETHMONT Thomas
+module "BETHMONTThomas" {
+  source = "./module/user/"
+
+  user-name = "thomasbethmont"
+  user-role = "member"
+}
+
 # BILLARD MADRIERES Victor
 module "BILLARDMADRIERESVictor" {
   source = "./module/user/"
