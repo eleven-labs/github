@@ -13,3 +13,11 @@ resource "github_team_membership" "members" {
   username = each.value
   role     = var.team-members_role[each.value]
 }
+
+resource "github_team_repository" "repositories" {
+  for_each = toset(var.team-repositories)
+
+  team_id    = github_team.main.id
+  repository = each.value
+  permission = var.team-repositories_permission[each.value]
+}
