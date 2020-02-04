@@ -25,6 +25,20 @@ module "core" {
     (module.SAILLARDDamien11.login)  = "maintainer",
     (module.VEBERArnaud.login)       = "maintainer",
   }
+
+  team-repositories = [
+    module.github.name,
+    module.blog_eleven-labs_com.name,
+    module.codelabs.name,
+    module.wheel-of-fortune.name,
+  ]
+
+  team-repositories_permission = {
+    (module.github.name)               = "admin",
+    (module.blog_eleven-labs_com.name) = "admin",
+    (module.codelabs.name)             = "admin",
+    (module.wheel-of-fortune.name)     = "admin",
+  }
 }
 
 # Developers
@@ -148,6 +162,20 @@ module "developers" {
     (module.VEBERArnaud.login)            = "maintainer",
     (module.VERMEILPierre.login)          = "member",
   }
+
+  team-repositories = [
+    module.github.name,
+    module.blog_eleven-labs_com.name,
+    module.codelabs.name,
+    module.wheel-of-fortune.name,
+  ]
+
+  team-repositories_permission = {
+    (module.github.name)               = "push",
+    (module.blog_eleven-labs_com.name) = "push",
+    (module.codelabs.name)             = "push",
+    (module.wheel-of-fortune.name)     = "push",
+  }
 }
 
 # HQ
@@ -172,5 +200,19 @@ module "hq" {
     (module.CLAVIERAnais.login) = "member",
     (module.PEJOUTThomas.login) = "member",
     (module.WILSON.login)       = "member",
+  }
+
+  team-repositories = [
+    module.github.name,
+    module.blog_eleven-labs_com.name,
+    module.codelabs.name,
+    module.wheel-of-fortune.name,
+  ]
+
+  team-repositories_permission = {
+    (module.github.name)               = "pull",
+    (module.blog_eleven-labs_com.name) = "push",
+    (module.codelabs.name)             = "push",
+    (module.wheel-of-fortune.name)     = "push",
   }
 }
