@@ -170,7 +170,7 @@ module "hq" {
     (module.AMARBenjamin.login) = "member",
     (module.BERRYElsa.login)    = "member",
     (module.CLAVIERAnais.login) = "member",
-    (module.PEJOUTThomas.login) = "maintainer",
+    (module.PEJOUTThomas.login) = "member",
     (module.WILSON.login)       = "member",
   }
 }
