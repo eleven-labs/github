@@ -387,7 +387,7 @@ module "PEJOUTThomas" {
   source = "./module/user/"
 
   user-name = "ElevenTom"
-  user-role = "admin"
+  user-role = "member"
 }
 
 # PIERLOT Romain

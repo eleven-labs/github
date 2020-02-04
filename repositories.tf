@@ -71,7 +71,7 @@ module "blog_eleven-labs_com" {
       pr_reviews-required_approving_review_count = 1
       pr_reviews-require_code_owner_reviews      = false
       pr_reviews-dismiss_stale_reviews           = false
-      pr_reviews-dismissal_users                 = []
+      pr_reviews-dismissal_users                 = [module.PEJOUTThomas.login]
       pr_reviews-dismissal_teams                 = []
       restrictions-users = [
         module.PEJOUTThomas.login,
@@ -118,9 +118,9 @@ module "codelabs" {
       pr_reviews-required_approving_review_count = 1
       pr_reviews-require_code_owner_reviews      = false
       pr_reviews-dismiss_stale_reviews           = false
-      pr_reviews-dismissal_users                 = []
+      pr_reviews-dismissal_users                 = [module.PEJOUTThomas.login]
       pr_reviews-dismissal_teams                 = []
-      restrictions-users                         = []
+      restrictions-users                         = [module.PEJOUTThomas.login]
       restrictions-teams                         = []
     }
   ]
