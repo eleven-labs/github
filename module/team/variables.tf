@@ -33,7 +33,7 @@ variable "team-members" {
 }
 
 
-variable "team-roles" {
+variable "team-members_role" {
   type = map
 
   default = {}
