@@ -38,3 +38,16 @@ variable "team-members_role" {
 
   default = {}
 }
+
+variable "team-repositories" {
+  type = list(string)
+
+  default = []
+}
+
+
+variable "team-repositories_permission" {
+  type = map
+
+  default = {}
+}

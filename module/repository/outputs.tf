@@ -1,3 +1,7 @@
+output "name" {
+  value = github_repository.main.name
+}
+
 output "full_name" {
   value = github_repository.main.full_name
 }
