@@ -23,7 +23,7 @@ module "github" {
       pr_reviews-require_code_owner_reviews      = false
       pr_reviews-dismiss_stale_reviews           = false
       pr_reviews-dismissal_users                 = []
-      pr_reviews-dismissal_teams                 = [module.core.slug]
+      pr_reviews-dismissal_teams                 = []
       restrictions-users                         = []
       restrictions-teams                         = []
     }
