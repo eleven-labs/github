@@ -16,7 +16,7 @@ module "core" {
     module.VEBERArnaud.login,
   ]
 
-  team-roles = {
+  team-members_role = {
     (module.GORRONCharlesEric.login) = "maintainer",
     (module.GREAUXJeremy.login)      = "maintainer",
     (module.JARDINETRemy.login)      = "maintainer",
@@ -92,7 +92,7 @@ module "developers" {
     module.VERMEILPierre.login,
   ]
 
-  team-roles = {
+  team-members_role = {
     (module.ALGRINThibaut.login)          = "member",
     (module.ANDREAlexandre.login)         = "member",
     (module.BENAIMMichael.login)          = "member",
@@ -166,7 +166,7 @@ module "hq" {
     module.WILSON.login,
   ]
 
-  team-roles = {
+  team-members_role = {
     (module.AMARBenjamin.login) = "member",
     (module.BERRYElsa.login)    = "member",
     (module.CLAVIERAnais.login) = "member",
