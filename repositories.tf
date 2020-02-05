@@ -23,7 +23,7 @@ module "github" {
       pr_reviews-require_code_owner_reviews      = false
       pr_reviews-dismiss_stale_reviews           = false
       pr_reviews-dismissal_users                 = []
-      pr_reviews-dismissal_teams                 = [module.core.slug]
+      pr_reviews-dismissal_teams                 = []
       restrictions-users                         = []
       restrictions-teams                         = []
     }
@@ -73,11 +73,8 @@ module "blog_eleven-labs_com" {
       pr_reviews-dismiss_stale_reviews           = false
       pr_reviews-dismissal_users                 = [module.PEJOUTThomas.login]
       pr_reviews-dismissal_teams                 = []
-      restrictions-users = [
-        module.PEJOUTThomas.login,
-        module.VEBERArnaud.login,
-      ]
-      restrictions-teams = []
+      restrictions-users                         = [module.PEJOUTThomas.login]
+      restrictions-teams                         = []
     }
   ]
 
