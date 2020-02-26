@@ -278,6 +278,14 @@ module "KANIANoel" {
   user-role = "admin"
 }
 
+# KONTOMARKOS Sophie
+module "KONTOMARKOSSophie" {
+  source = "./module/user/"
+
+  user-name = "breizh81"
+  user-role = "member"
+}
+
 # LANAU Gregory
 module "LANAUGregory" {
   source = "./module/user/"
