@@ -104,7 +104,6 @@ module "developers" {
     module.SURPierre.login,
     module.THUONThierry.login,
     module.VEBERArnaud.login,
-    module.VERMEILPierre.login,
   ]
 
   team-members_role = {
@@ -162,7 +161,6 @@ module "developers" {
     (module.SURPierre.login)              = "member",
     (module.THUONThierry.login)           = "member",
     (module.VEBERArnaud.login)            = "maintainer",
-    (module.VERMEILPierre.login)          = "member",
   }
 
   team-repositories = [
