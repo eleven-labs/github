@@ -1,3 +1,11 @@
+# ABUDARHAM Yuval
+module "ABUDARHAMYuval" {
+  source = "./module/user/"
+
+  user-name = "FireWolfHound"
+  user-role = "member"
+}
+
 # ALGRIN Thibaut
 module "ALGRINThibaut" {
   source = "./module/user/"
