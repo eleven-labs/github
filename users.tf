@@ -70,14 +70,6 @@ module "BILLARDMADRIERESVictor" {
   user-role = "member"
 }
 
-# BOE Hadrien
-module "BOEHadrien" {
-  source = "./module/user/"
-
-  user-name = "Katario"
-  user-role = "member"
-}
-
 # BOILLON Yannick
 module "BOILLONYannick" {
   source = "./module/user/"
