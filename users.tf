@@ -14,6 +14,14 @@ module "ALGRINThibaut" {
   user-role = "member"
 }
 
+# ALLIER Alexandre
+module "ALLIERAlexandre" {
+  source = "./module/user/"
+
+  user-name = "aallier"
+  user-role = "member"
+}
+
 # AMAR Benjamin
 module "AMARBenjamin" {
   source = "./module/user/"
