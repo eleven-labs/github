@@ -30,6 +30,7 @@ module "core" {
     module.github.name,
     module.blog_eleven-labs_com.name,
     module.codelabs.name,
+    module.planets.name,
     module.wheel-of-fortune.name,
   ]
 
@@ -37,6 +38,7 @@ module "core" {
     (module.github.name)               = "admin",
     (module.blog_eleven-labs_com.name) = "admin",
     (module.codelabs.name)             = "admin",
+    (module.planets.name)              = "admin",
     (module.wheel-of-fortune.name)     = "admin",
   }
 }
@@ -171,6 +173,7 @@ module "developers" {
     module.github.name,
     module.blog_eleven-labs_com.name,
     module.codelabs.name,
+    module.planets.name,
     module.wheel-of-fortune.name,
   ]
 
@@ -178,6 +181,7 @@ module "developers" {
     (module.github.name)               = "push",
     (module.blog_eleven-labs_com.name) = "push",
     (module.codelabs.name)             = "push",
+    (module.planets.name)              = "push",
     (module.wheel-of-fortune.name)     = "push",
   }
 }
@@ -210,6 +214,7 @@ module "hq" {
     module.github.name,
     module.blog_eleven-labs_com.name,
     module.codelabs.name,
+    module.planets.name,
     module.wheel-of-fortune.name,
   ]
 
@@ -217,6 +222,7 @@ module "hq" {
     (module.github.name)               = "pull",
     (module.blog_eleven-labs_com.name) = "push",
     (module.codelabs.name)             = "push",
+    (module.planets.name)              = "push",
     (module.wheel-of-fortune.name)     = "push",
   }
 }
