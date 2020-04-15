@@ -14,6 +14,7 @@ module "core" {
     module.SAILLARDDamien.login,
     module.SAILLARDDamien11.login,
     module.VEBERArnaud.login,
+    module.MAIREAUXMaxence.login,
   ]
 
   team-members_role = {
@@ -24,6 +25,7 @@ module "core" {
     (module.SAILLARDDamien.login)    = "maintainer",
     (module.SAILLARDDamien11.login)  = "maintainer",
     (module.VEBERArnaud.login)       = "maintainer",
+    (module.MAIREAUXMaxence.login)   = "maintainer",
   }
 
   team-repositories = [
