@@ -5,7 +5,7 @@ This project manages the eleven-labs github organization with terraform
 [![Build Status](https://travis-ci.org/eleven-labs/github.svg?branch=master)](https://travis-ci.org/eleven-labs/github)
 
 ## Requirements
-- [`terraform`](https://www.terraform.io/downloads.html) `~> 0.12.0`
+- [`terraform`](https://www.terraform.io/downloads.html) `~> 0.12.24`
 
 ## Usage
 ```bash
