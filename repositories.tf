@@ -177,22 +177,7 @@ module "planets" {
   repository-default_branch = "master"
 
   # branches protection
-  branches_protection = [
-    {
-      branch                                     = "master"
-      enforce_admins                             = true
-      require_signed_commits                     = false
-      status_check-strict                        = true
-      status_check-contexts                      = []
-      pr_reviews-required_approving_review_count = 1
-      pr_reviews-require_code_owner_reviews      = false
-      pr_reviews-dismiss_stale_reviews           = false
-      pr_reviews-dismissal_users                 = []
-      pr_reviews-dismissal_teams                 = []
-      restrictions-users                         = []
-      restrictions-teams                         = []
-    }
-  ]
+  branches_protection = []
 
   # webhooks
   webhooks = []
