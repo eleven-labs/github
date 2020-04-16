@@ -4,7 +4,7 @@ version: ~> 1.0
 
 env:
   global:
-    - TERRAFORM_VERSION=0.12.18
+    - TERRAFORM_VERSION=0.12.24
     - TERRAFORM_PATH=$HOME/bin
 
 before_install:
