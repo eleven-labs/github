@@ -182,6 +182,14 @@ module "DRUONMehdi" {
   user-role = "member"
 }
 
+# DUNG Kevin
+module "DUNGKevin" {
+  source = "./module/user/"
+
+  user-name = "KevinDung"
+  user-role = "member"
+}
+
 # DURAND Hugo
 module "DURANDHugo" {
   source = "./module/user/"
