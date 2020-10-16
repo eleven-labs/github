@@ -426,7 +426,7 @@ module "PEJOUTThomas" {
 module "PIERLOTRomain" {
   source = "./module/user/"
 
-  user-name = "GusTTShowbiz"
+  user-name = "rpierlot"
   user-role = "member"
 }
 
