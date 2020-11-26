@@ -2,7 +2,7 @@
 
 This project manages the eleven-labs github organization with terraform
 
-[![Build Status](https://travis-ci.org/eleven-labs/github.svg?branch=master)](https://travis-ci.org/eleven-labs/github)
+[![terraform](https://github.com/eleven-labs/github/workflows/terraform/badge.svg?branch=master&event=push)](https://github.com/btp-force/tf-github/actions?query=workflow:terraform+branch:master)
 
 ## Requirements
 - [`terraform`](https://www.terraform.io/downloads.html) `~> 0.12.24`
@@ -30,7 +30,7 @@ terraform plan
 
 > :warning: never apply changes manually
 >
-> changes should be applied by the [CI/CD](https://travis-ci.org/eleven-labs/github) when the feature branch is merged into master
+> changes should be applied by the [CI/CD](https://github.com/btp-force/tf-github/actions?query=workflow:terraform) when the feature branch is merged into master
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
