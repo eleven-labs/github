@@ -162,7 +162,7 @@ module "CORDIERKevin" {
 module "DELPEYROUXVictor" {
   source = "./module/user/"
 
-  user-name = "vdelpeyroux"
+  user-name = "Vik-Th0r"
   user-role = "member"
 }
 
