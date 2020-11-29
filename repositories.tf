@@ -18,7 +18,7 @@ module "github" {
       enforce_admins                             = true
       require_signed_commits                     = true
       status_check-strict                        = true
-      status_check-contexts                      = ["continuous-integration/travis-ci"]
+      status_check-contexts                      = []
       pr_reviews-required_approving_review_count = 1
       pr_reviews-require_code_owner_reviews      = false
       pr_reviews-dismiss_stale_reviews           = false
@@ -30,16 +30,7 @@ module "github" {
   ]
 
   # webhooks
-  webhooks = [
-    {
-      url          = "https://notify.travis-ci.org"
-      secret       = null
-      content_type = "form"
-      insecure_ssl = false
-      active       = true
-      events       = ["create", "delete", "issue_comment", "member", "public", "pull_request", "push", "repository"]
-    }
-  ]
+  webhooks = []
 
   repository-issue_labels = concat(var.default-issue_labels)
 }
