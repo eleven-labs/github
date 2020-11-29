@@ -5,7 +5,7 @@ This project manages the eleven-labs github organization with terraform
 [![terraform](https://github.com/eleven-labs/github/workflows/terraform/badge.svg?branch=master&event=push)](https://github.com/btp-force/tf-github/actions?query=workflow:terraform+branch:master)
 
 ## Requirements
-- [`terraform`](https://www.terraform.io/downloads.html) `~> 0.12.24`
+- [`terraform`](https://www.terraform.io/downloads.html) `~> 0.12.29`
 
 ## Usage
 ```bash
