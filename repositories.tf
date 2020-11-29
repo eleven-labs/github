@@ -18,7 +18,7 @@ module "github" {
       enforce_admins                             = true
       require_signed_commits                     = true
       status_check-strict                        = true
-      status_check-contexts                      = []
+      status_check-contexts                      = ["terraform"]
       pr_reviews-required_approving_review_count = 1
       pr_reviews-require_code_owner_reviews      = false
       pr_reviews-dismiss_stale_reviews           = false
