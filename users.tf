@@ -42,7 +42,7 @@ module "ANDREAlexandre" {
 module "BENAIMMichael" {
   source = "./module/user/"
 
-  user-name = "mikaben89"
+  user-name = "mikamoush"
   user-role = "member"
 }
 
