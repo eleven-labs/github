@@ -222,6 +222,14 @@ module "ELFARSAOUIKamal" {
   user-role = "member"
 }
 
+# FERT Dimitri
+module "FERTDimitri" {
+  source = "./module/user/"
+
+  user-name = "dimitri-fert"
+  user-role = "member"
+}
+
 # FRUIT Dimitri
 module "FRUITDimitri" {
   source = "./module/user/"
