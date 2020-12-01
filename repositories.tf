@@ -35,6 +35,23 @@ module "github" {
   repository-issue_labels = concat(var.default-issue_labels)
 }
 
+module "amp-jekyll" {
+  source = "./module/repository/"
+
+  # repository
+  repository-name        = "amp-jekyll"
+  repository-description = "Build Accelerated Mobile Page versions of your Jekyll posts"
+
+  repository-private = false
+
+  repository-has_projects = false
+
+  repository-auto_init      = false
+  repository-default_branch = "master"
+
+  repository-issue_labels = concat(var.default-issue_labels)
+}
+
 module "blog_eleven-labs_com" {
   source = "./module/repository/"
 
