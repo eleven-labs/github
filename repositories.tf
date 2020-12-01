@@ -153,6 +153,23 @@ module "codelabs" {
   repository-issue_labels = concat(var.default-issue_labels)
 }
 
+module "jekyll-multiple-languages-plugin" {
+  source = "./module/repository/"
+
+  # repository
+  repository-name        = "jekyll-multiple-languages-plugin"
+  repository-description = "I18n support for Jekyll and Octopress"
+
+  repository-private = false
+
+  repository-has_projects = false
+
+  repository-auto_init      = false
+  repository-default_branch = "master"
+
+  repository-issue_labels = concat(var.default-issue_labels)
+}
+
 module "wheel-of-fortune" {
   source = "./module/repository/"
 

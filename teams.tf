@@ -31,17 +31,19 @@ module "core" {
     module.amp-jekyll.name,
     module.blog_eleven-labs_com.name,
     module.codelabs.name,
+    module.jekyll-multiple-languages-plugin.name,
     module.planets.name,
     module.wheel-of-fortune.name,
   ]
 
   team-repositories_permission = {
-    (module.github.name)               = "admin",
-    (module.amp-jekyll.name)           = "admin",
-    (module.blog_eleven-labs_com.name) = "admin",
-    (module.codelabs.name)             = "admin",
-    (module.planets.name)              = "admin",
-    (module.wheel-of-fortune.name)     = "admin",
+    (module.github.name)                           = "admin",
+    (module.amp-jekyll.name)                       = "admin",
+    (module.blog_eleven-labs_com.name)             = "admin",
+    (module.codelabs.name)                         = "admin",
+    (module.jekyll-multiple-languages-plugin.name) = "admin",
+    (module.planets.name)                          = "admin",
+    (module.wheel-of-fortune.name)                 = "admin",
   }
 }
 
@@ -180,17 +182,19 @@ module "developers" {
     module.amp-jekyll.name,
     module.blog_eleven-labs_com.name,
     module.codelabs.name,
+    module.jekyll-multiple-languages-plugin.name,
     module.planets.name,
     module.wheel-of-fortune.name,
   ]
 
   team-repositories_permission = {
-    (module.github.name)               = "push",
-    (module.amp-jekyll.name)           = "push",
-    (module.blog_eleven-labs_com.name) = "push",
-    (module.codelabs.name)             = "push",
-    (module.planets.name)              = "push",
-    (module.wheel-of-fortune.name)     = "push",
+    (module.github.name)                           = "push",
+    (module.amp-jekyll.name)                       = "push",
+    (module.blog_eleven-labs_com.name)             = "push",
+    (module.codelabs.name)                         = "push",
+    (module.jekyll-multiple-languages-plugin.name) = "push",
+    (module.planets.name)                          = "push",
+    (module.wheel-of-fortune.name)                 = "push",
   }
 }
 
@@ -223,16 +227,18 @@ module "hq" {
     module.amp-jekyll.name,
     module.blog_eleven-labs_com.name,
     module.codelabs.name,
+    module.jekyll-multiple-languages-plugin.name,
     module.planets.name,
     module.wheel-of-fortune.name,
   ]
 
   team-repositories_permission = {
-    (module.github.name)               = "pull",
-    (module.amp-jekyll.name)           = "push",
-    (module.blog_eleven-labs_com.name) = "push",
-    (module.codelabs.name)             = "push",
-    (module.planets.name)              = "push",
-    (module.wheel-of-fortune.name)     = "push",
+    (module.github.name)                           = "pull",
+    (module.amp-jekyll.name)                       = "push",
+    (module.blog_eleven-labs_com.name)             = "push",
+    (module.codelabs.name)                         = "push",
+    (module.jekyll-multiple-languages-plugin.name) = "push",
+    (module.planets.name)                          = "push",
+    (module.wheel-of-fortune.name)                 = "push",
   }
 }
