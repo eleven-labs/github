@@ -158,6 +158,14 @@ module "CORDIERKevin" {
   user-role = "member"
 }
 
+# COURBO Renaud
+module "COURBORenaud" {
+  source = "./module/user/"
+
+  user-name = "rcourbo87"
+  user-role = "member"
+}
+
 # DELPEYROUX Victor
 module "DELPEYROUXVictor" {
   source = "./module/user/"
