@@ -230,6 +230,14 @@ module "ELFARSAOUIKamal" {
   user-role = "member"
 }
 
+# FEIREISEN Benjamin
+module "FEIREISENBenjamin" {
+  source = "./module/user/"
+
+  user-name = "Maggeuss"
+  user-role = "member"
+}
+
 # FERT Dimitri
 module "FERTDimitri" {
   source = "./module/user/"
