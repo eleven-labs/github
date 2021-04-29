@@ -12,6 +12,7 @@ env:
   AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
   GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
   GITHUB_ORGANIZATION: ${{ secrets.CUSTOM_GITHUB_ORGANIZATION }}
+  TF_VAR_packagist_token: ${{ secrets.PACKAGIST_TOKEN }}
 
 jobs:
   terraform:

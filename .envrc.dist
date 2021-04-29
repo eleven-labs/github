@@ -3,3 +3,5 @@ export AWS_DEFAULT_REGION=
 
 export GITHUB_TOKEN=
 export GITHUB_ORGANIZATION=
+
+export TF_VAR_packagist_token=
