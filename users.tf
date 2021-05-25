@@ -214,6 +214,14 @@ module "EINHORNStephane" {
   user-role = "member"
 }
 
+# JOSEPH_GEHANNIN Marianne
+module "JOSEPHGEHANNINMarianne" {
+  source = "./module/user/"
+
+  user-name = "ElevenMarianne"
+  user-role = "member"
+}
+
 # EL FARSAOUI Kamal
 module "ELFARSAOUIKamal" {
   source = "./module/user/"
