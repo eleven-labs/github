@@ -214,14 +214,6 @@ module "EINHORNStephane" {
   user-role = "member"
 }
 
-# JOSEPH_GEHANNIN Marianne
-module "JOSEPHGEHANNINMarianne" {
-  source = "./module/user/"
-
-  user-name = "ElevenMarianne"
-  user-role = "member"
-}
-
 # EL FARSAOUI Kamal
 module "ELFARSAOUIKamal" {
   source = "./module/user/"
@@ -308,6 +300,14 @@ module "JARDINETRemy" {
 
   user-name = "Pouzor"
   user-role = "admin"
+}
+
+# JOSEPH_GEHANNIN Marianne
+module "JOSEPHGEHANNINMarianne" {
+  source = "./module/user/"
+
+  user-name = "ElevenMarianne"
+  user-role = "member"
 }
 
 # KANIA Noel
