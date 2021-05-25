@@ -1,11 +1,3 @@
-# ALGRIN Thibaut
-module "ALGRINThibaut" {
-  source = "./module/user/"
-
-  user-name = "ThibautAlgrin"
-  user-role = "member"
-}
-
 # ALLIER Alexandre
 module "ALLIERAlexandre" {
   source = "./module/user/"
