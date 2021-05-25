@@ -54,14 +54,6 @@ module "BETHMONTThomas" {
   user-role = "member"
 }
 
-# BILLARD MADRIERES Victor
-module "BILLARDMADRIERESVictor" {
-  source = "./module/user/"
-
-  user-name = "vbillardm"
-  user-role = "member"
-}
-
 # BOILLON Yannick
 module "BOILLONYannick" {
   source = "./module/user/"
