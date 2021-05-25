@@ -430,14 +430,6 @@ module "VEBERArnaud" {
   user-role = "admin"
 }
 
-# VERNEUIL Florian
-module "VERNEUILFlorian" {
-  source = "./module/user/"
-
-  user-name = "Fverneuil"
-  user-role = "member"
-}
-
 # WILSON
 module "WILSON" {
   source = "./module/user/"
