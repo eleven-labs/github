@@ -262,6 +262,14 @@ module "JARDINETRemy" {
   user-role = "admin"
 }
 
+# JOSEPH Marianne
+module "JOSEPHMarianne" {
+  source = "./module/user/"
+
+  user-name = "ElevenMarianne"
+  user-role = "member"
+}
+
 # KANIA Noel
 module "KANIANoel" {
   source = "./module/user/"
