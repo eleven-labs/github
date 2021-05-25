@@ -226,7 +226,7 @@ module "ELFARSAOUIKamal" {
 module "FEIREISENBenjamin" {
   source = "./module/user/"
 
-  user-name = "Maggeuss"
+  user-name = "bfeir-eleven"
   user-role = "member"
 }
 
