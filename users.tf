@@ -278,14 +278,6 @@ module "KONTOMARKOSSophie" {
   user-role = "member"
 }
 
-# LAHJAILY Yacine
-module "LAHJAILYYacine" {
-  source = "./module/user/"
-
-  user-name = "Ylahjaily"
-  user-role = "member"
-}
-
 # LANAU Gregory
 module "LANAUGregory" {
   source = "./module/user/"
