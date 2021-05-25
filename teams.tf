@@ -28,6 +28,7 @@ module "core" {
 
   team-repositories = [
     module.github.name,
+    module.api-validator.name,
     module.amp-jekyll.name,
     module.blog_eleven-labs_com.name,
     module.codelabs.name,
@@ -38,6 +39,7 @@ module "core" {
 
   team-repositories_permission = {
     (module.github.name)                           = "admin",
+    (module.api-validator.name)                    = "admin",
     (module.amp-jekyll.name)                       = "admin",
     (module.blog_eleven-labs_com.name)             = "admin",
     (module.codelabs.name)                         = "admin",
@@ -183,6 +185,7 @@ module "developers" {
 
   team-repositories = [
     module.github.name,
+    module.api-validator.name,
     module.amp-jekyll.name,
     module.blog_eleven-labs_com.name,
     module.codelabs.name,
@@ -193,6 +196,7 @@ module "developers" {
 
   team-repositories_permission = {
     (module.github.name)                           = "push",
+    (module.api-validator.name)                    = "push",
     (module.amp-jekyll.name)                       = "push",
     (module.blog_eleven-labs_com.name)             = "push",
     (module.codelabs.name)                         = "push",
@@ -228,6 +232,7 @@ module "hq" {
 
   team-repositories = [
     module.github.name,
+    module.api-validator.name,
     module.amp-jekyll.name,
     module.blog_eleven-labs_com.name,
     module.codelabs.name,
@@ -238,6 +243,7 @@ module "hq" {
 
   team-repositories_permission = {
     (module.github.name)                           = "pull",
+    (module.api-validator.name)                    = "push",
     (module.amp-jekyll.name)                       = "push",
     (module.blog_eleven-labs_com.name)             = "push",
     (module.codelabs.name)                         = "push",

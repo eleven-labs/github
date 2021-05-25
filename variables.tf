@@ -60,3 +60,7 @@ variable "default-issue_labels" {
     }
   ]
 }
+
+variable "packagist_token" {
+  type = string
+}

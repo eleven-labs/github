@@ -35,6 +35,52 @@ module "github" {
   repository-issue_labels = concat(var.default-issue_labels)
 }
 
+module "api-validator" {
+  source = "./module/repository/"
+
+  # repository
+  repository-name        = "api-validator"
+  repository-description = "Provide helpers that validate a request against an OpenAPi/Swagger2 API description"
+
+  repository-private = false
+
+  repository-has_projects = false
+
+  repository-auto_init      = false
+  repository-default_branch = "master"
+
+  # webhooks
+  webhooks = [
+    {
+      url          = "https://notify.travis-ci.org"
+      secret       = null
+      content_type = "form"
+      insecure_ssl = false
+      active       = true
+      events       = ["create", "delete", "issue_comment", "member", "public", "pull_request", "push", "repository"]
+    },
+    {
+      url          = "https://scrutinizer-ci.com/github-callback"
+      secret       = null
+      content_type = "json"
+      insecure_ssl = false
+      active       = true
+      events       = ["commit_comment", "issue_comment", "pull_request", "pull_request_review_comment", "push", "status"]
+    },
+    {
+      url          = "https://packagist.org/api/update-package?username=guillemcanal"
+      secret       = null
+      content_type = "json"
+      insecure_ssl = false
+      active       = true
+      events       = ["push"]
+      secret       = var.packagist_token
+    }
+  ]
+
+  repository-issue_labels = concat(var.default-issue_labels)
+}
+
 module "amp-jekyll" {
   source = "./module/repository/"
 
