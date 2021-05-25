@@ -150,14 +150,6 @@ module "DIOURIYounes" {
   user-role = "member"
 }
 
-# DRUON Mehdi
-module "DRUONMehdi" {
-  source = "./module/user/"
-
-  user-name = "MehdiDr"
-  user-role = "member"
-}
-
 # DUNG Kevin
 module "DUNGKevin" {
   source = "./module/user/"
