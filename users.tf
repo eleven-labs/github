@@ -1,11 +1,3 @@
-# ALGRIN Thibaut
-module "ALGRINThibaut" {
-  source = "./module/user/"
-
-  user-name = "ThibautAlgrin"
-  user-role = "member"
-}
-
 # ALLIER Alexandre
 module "ALLIERAlexandre" {
   source = "./module/user/"
@@ -27,14 +19,6 @@ module "ANDREAlexandre" {
   source = "./module/user/"
 
   user-name = "alex-ception"
-  user-role = "member"
-}
-
-# BENAIMMichael
-module "BENAIMMichael" {
-  source = "./module/user/"
-
-  user-name = "mikamoush"
   user-role = "member"
 }
 
@@ -67,14 +51,6 @@ module "BETHMONTThomas" {
   source = "./module/user/"
 
   user-name = "thomasbethmont"
-  user-role = "member"
-}
-
-# BILLARD MADRIERES Victor
-module "BILLARDMADRIERESVictor" {
-  source = "./module/user/"
-
-  user-name = "vbillardm"
   user-role = "member"
 }
 
@@ -174,27 +150,11 @@ module "DIOURIYounes" {
   user-role = "member"
 }
 
-# DRUON Mehdi
-module "DRUONMehdi" {
-  source = "./module/user/"
-
-  user-name = "MehdiDr"
-  user-role = "member"
-}
-
 # DUNG Kevin
 module "DUNGKevin" {
   source = "./module/user/"
 
   user-name = "KevinDung"
-  user-role = "member"
-}
-
-# DURAND Hugo
-module "DURANDHugo" {
-  source = "./module/user/"
-
-  user-name = "HugoDurand"
   user-role = "member"
 }
 
@@ -302,6 +262,14 @@ module "JARDINETRemy" {
   user-role = "admin"
 }
 
+# JOSEPH Marianne
+module "JOSEPHMarianne" {
+  source = "./module/user/"
+
+  user-name = "ElevenMarianne"
+  user-role = "member"
+}
+
 # KANIA Noel
 module "KANIANoel" {
   source = "./module/user/"
@@ -315,14 +283,6 @@ module "KONTOMARKOSSophie" {
   source = "./module/user/"
 
   user-name = "breizh81"
-  user-role = "member"
-}
-
-# LAHJAILY Yacine
-module "LAHJAILYYacine" {
-  source = "./module/user/"
-
-  user-name = "Ylahjaily"
   user-role = "member"
 }
 
@@ -347,22 +307,6 @@ module "LEROUGEPierre" {
   source = "./module/user/"
 
   user-name = "RedPi"
-  user-role = "member"
-}
-
-# MAIREAUX Maxence
-module "MAIREAUXMaxence" {
-  source = "./module/user/"
-
-  user-name = "flemzord"
-  user-role = "member"
-}
-
-# MASCLEF Romain
-module "MASCLEFRomain" {
-  source = "./module/user/"
-
-  user-name = "rmasclef"
   user-role = "member"
 }
 
@@ -492,14 +436,6 @@ module "VEBERArnaud" {
 
   user-name = "VEBERArnaud"
   user-role = "admin"
-}
-
-# VERNEUIL Florian
-module "VERNEUILFlorian" {
-  source = "./module/user/"
-
-  user-name = "Fverneuil"
-  user-role = "member"
 }
 
 # WILSON
