@@ -302,14 +302,6 @@ module "LEROUGEPierre" {
   user-role = "member"
 }
 
-# MAIREAUX Maxence
-module "MAIREAUXMaxence" {
-  source = "./module/user/"
-
-  user-name = "flemzord"
-  user-role = "member"
-}
-
 # MASCLEF Romain
 module "MASCLEFRomain" {
   source = "./module/user/"
