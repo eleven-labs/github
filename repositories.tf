@@ -121,7 +121,7 @@ module "blog_eleven-labs_com" {
       enforce_admins                             = false
       require_signed_commits                     = false
       status_check-strict                        = true
-      status_check-contexts                      = ["Travis CI - Branch", "Travis CI - Pull Request"]
+      status_check-contexts                      = []
       pr_reviews-required_approving_review_count = 1
       pr_reviews-require_code_owner_reviews      = false
       pr_reviews-dismiss_stale_reviews           = false
